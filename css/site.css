@@ -1,0 +1,23 @@
+
+.hd .masthead {
+  color: #333;
+  display: block;
+  font-family: Norican, Georgia, serif;
+  margin: 40px 0;
+  text-align: center;
+  text-decoration: none;
+}
+
+.hd .masthead h1,
+.h2 .masthead h2 {
+  margin: 0;
+}
+
+.hd .masthead h1 {
+  font-size: 80px;
+  line-height: 1;
+}
+
+.hd .navbar .brand {
+  font-family: Norican, Georgia, serif;
+}
