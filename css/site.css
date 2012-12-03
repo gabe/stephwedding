@@ -157,3 +157,39 @@ a.registry .metadata {
 .carousel {
   margin-top: 36px;
 }
+
+.events {
+  margin-top: 36px;
+}
+
+.event,
+.hotel {
+  border-top: solid 1px #d5d5d5;
+  margin-bottom: 18px;
+  padding-top: 17px;
+}
+
+.event address a,
+.hotel address a {
+  color: #333;
+}
+
+.event .alert {
+  font-size: 16.25px;
+}
+
+.hotel h4 {
+  margin-bottom: 18px;
+}
+
+.event ul.links,
+.hotel ul.links {
+  list-style: none;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.event .map img,
+.hotel .map img {
+  border: solid 4px white;
+}
