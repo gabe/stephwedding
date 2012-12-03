@@ -1,4 +1,3 @@
-
 body {
   background-image: url('../img/bg.jpg');
 }
@@ -178,6 +177,7 @@ a.registry .metadata {
   font-size: 16.25px;
 }
 
+.event h4,
 .hotel h4 {
   margin-bottom: 18px;
 }
