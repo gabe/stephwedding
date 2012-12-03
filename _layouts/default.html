@@ -2,71 +2,111 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>{% if page.title %}{{ page.title }} &ndash; {% endif %}Stephanie &amp; Todd Are Getting Married!</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <title>{% if page.title %}{{ page.title }} &ndash; {% endif %}Stephanie &amp; Todd &ndash; Mar 2 2013</title>
+    <meta name="description" content="The Wedding of Stephanie Boyer &amp; Todd Grabowski &ndash; March 02, 2013">
+    <meta name="author" content="Gabriel Boyer &lt;gboyer@gmail.com&gt;">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/bootstrap-responsive.min.css">
     <link rel="stylesheet" href="/css/site.css">
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Norican">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Quicksand|Copse">
     <!-- HTML5 shim, for IE6-8 support of HTML elements -->
     <!--[if lt IE 9]>
       <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
   </head>
   <body>
-    <header class="hd">
-      <div class="container">
-        <a class="masthead visible-desktop" href="/">
-          <h1>Stephanie &amp; Todd</h1>
-          <h2>Are Getting Married!</h2>
-        </a>
-        <div class="navbar">
-          <div class="navbar-inner">
-            <div class="container">
-              <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </a>
-              <a class="brand hidden-desktop" href="/">Stephanie &amp; Todd</a>
-              <div class="nav-collapse">
-                <ul class="nav">
-                  <li {% if page.url == '/details.html' %}class="active"{% endif %}>
-                    <a href="/">When/Where</a>
-                  </li>
-                  <li {% if page.url == '/people.html' %}class="active"{% endif %}>
-                    <a href="/">People</a>
-                  </li>
-                  <li {% if page.url == '/rsvp.html' %}class="active"{% endif %}>
-                    <a href="/">RSVP</a>
-                  </li>
-                  <li {% if page.url == '/photos.html' %}class="active"{% endif %}>
-                    <a href="/">Photos</a>
-                  </li>
-                  <li {% if page.url == '/registry.html' %}class="active"{% endif %}>
-                    <a href="/">Registry</a>
-                  </li>
-                  <li><a href="mailto:{{ site.email }}" title="{{ site.email }}">Contact Us</a></li>
-                </ul>
-              </div>
-            </div>
+    <div class="navbar navbar-fixed-top hidden-desktop">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="/">Stephanie &amp; Todd <small>Mar 2, 2013</small></a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li {% if page.url == '/details.html' %}class="active"{% endif %}>
+                <a href="/details.html">Details</a>
+              </li>
+              <li {% if page.url == '/us.html' %}class="active"{% endif %}>
+                <a href="/us.html">About Us</a>
+              </li>
+              <li {% if page.url == '/people.html' %}class="active"{% endif %}>
+                <a href="/people.html">Wedding Party</a>
+              </li>
+              <li {% if page.url == '/registry.html' %}class="active"{% endif %}>
+                <a href="/registry.html">Registry</a>
+              </li>
+              <li {% if page.url == '/rsvp.html' %}class="active"{% endif %}>
+                <a href="/rsvp.html">RSVP</a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-    </header>
+    </div>
+    <div class="hd visible-desktop">
+      <div class="container">
+        <a class="masthead" href="/">
+          <h3>The Wedding of</h3>
+          <h1>Stephanie Boyer &amp; Todd Grabowski</h1>
+          <h3>March 02, 2013</h3>
+        </a>
+      </div>
+      <div class="navigation">
+        <ul>
+          <li {% if page.url == '/details.html' %}class="active"{% endif %}>
+            <a href="/details.html">Details</a>
+          </li>
+          <li {% if page.url == '/us.html' %}class="active"{% endif %}>
+            <a href="/us.html">About Us</a>
+          </li>
+          <li {% if page.url == '/people.html' %}class="active"{% endif %}>
+            <a href="/people.html">Wedding Party</a>
+          </li>
+          <li {% if page.url == '/registry.html' %}class="active"{% endif %}>
+            <a href="/registry.html">Registry</a>
+          </li>
+          <li {% if page.url == '/rsvp.html' %}class="active"{% endif %}>
+            <a href="/rsvp.html">RSVP</a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <div class="bd">
       <div class="container">
         {{ content }}
       </div>
-    </div>
-    <footer class="ft">
-      <div class="container">
+      <div class="container hidden-desktop">
+        <ul class="nav nav-tabs nav-stacked">
+          <li>
+            <a href="/details.html">Details</a>
+          </li>
+          <li>
+            <a href="/us.html">About Us</a>
+          </li>
+          <li>
+            <a href="/people.html">Wedding Party</a>
+          </li>
+          <li>
+            <a href="/registry.html">Registry</a>
+          </li>
+          <li>
+            <a href="/rsvp.html">RSVP</a>
+          </li>
+        </ul>
       </div>
-    </footer>
+    </div>
+    <div class="ft">
+      <div class="container">
+        <div class="pull-right">
+          <p><a href="#">Back to top</a></p>
+        </div>
+        <p><a href="mailto:{{ site.email }}">Have a question? Contact us!</a></p>
+      </div>
+    </div>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
-    <script src="//platform.twitter.com/widgets.js"></script>
   </body>
 </html>
