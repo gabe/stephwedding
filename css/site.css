@@ -185,6 +185,7 @@ a.registry .metadata {
 .event ul.links,
 .hotel ul.links {
   list-style: none;
+  margin-bottom: 18px;
   margin-left: 0;
   margin-right: 0;
 }
@@ -192,4 +193,13 @@ a.registry .metadata {
 .event .map img,
 .hotel .map img {
   border: solid 4px white;
+}
+
+.rsvp .event {
+  border: none;
+  padding-top: 0;
+}
+
+.rsvp .event h3 {
+  margin-bottom: 9px;
 }
